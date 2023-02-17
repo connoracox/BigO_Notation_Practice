@@ -38,7 +38,7 @@ print(repeat_str(6, "W"))
 # I think this is O(n^2) because there is a for loop nested inside of a while loop.
 
 def digital_root(n):
-    while n >= 9:
+    while n > 9:
         sum_digits = 0
         for digit in str(n):
             sum_digits += int(digit)
